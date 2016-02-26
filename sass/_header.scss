@@ -1,0 +1,24 @@
+.site-header {
+	// @include outer-container();
+
+	.site-branding {
+	// @include span-columns(3);
+
+		.site-title {
+			  @include hide-text;
+
+			  width: 250px;
+			  height: 200px;
+			  background-repeat: no-repeat;
+			  background-color: transparent;
+			  background-size: contain;
+			  background-image: url(img/HEART-Logo.svg);
+			}
+	}
+
+	.main-navigation {
+		// @include span-columns(9);
+	}
+}
+
+

@@ -1,0 +1,68 @@
+/*
+Theme Name: heart
+Theme URI: http://underscores.me/
+Author: sean orozco
+Author URI: http://seanoroz.co
+Description: Here we go!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: heart
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+heart is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+@import "bourbon", "neat";
+
+@import "variables";
+@import "accessibility";
+@import "header";
+@import "menus";
+
+// @import "modal";
+
+
+a {
+	color:red;
+
+	@include transition(all .20s ease-in-out);
+
+	&:hover {
+		color: purple;
+	}
+}
+
+
+.scroll-on-page {
+  $large-screen: 50em !default;
+
+  aside {
+    @include media($large-screen) {
+      @include span-columns(4);
+    }
+  }
+
+  .scroll-on-page-link {
+    display: block;
+    outline: none;
+  }
+
+  article {
+    @include media($large-screen) {
+      @include span-columns(8);
+    }
+  }
+}
+
+// Based on code by http://codepen.io/xmark/
+
+
