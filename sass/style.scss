@@ -31,6 +31,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 // @import "modal";
 
 
+body {
+	background-color: #222;
+}
+
 a {
 	color:red;
 
@@ -40,6 +44,9 @@ a {
 		color: purple;
 	}
 }
+
+
+
 
 
 .scroll-on-page {
